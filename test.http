@@ -1,0 +1,69 @@
+# POST http://localhost:9002/api/users HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "Felipe Soler",
+#     "email": "jsolerrosas@gmail.com",
+#     "genre" : "male",
+#     "age" : 25
+# }
+
+# GET http://localhost:9002/api/categories HTTP/1.1
+
+
+# GET http://localhost:9002/api/users/2 HTTP/1.1
+
+# POST http://localhost:9002/api/categories/all
+# content-type: application/json
+
+# {
+#     [
+#         {"name": "Chest"},
+#         {"name": "Back"},
+#         {"name": "Legs"},
+#         {"name": "Shoulders"},
+#         {"name": "Arms"},
+#         {"name": "Core"},
+#         {"name": "Cardio"},
+#         {"name": "Full Body"},
+#         {"name": "Abs"},
+#         {"name": "Glutes"}
+#     ]
+# }
+
+# POST http://localhost:9002/api/categories/all
+#  content-type: application/json
+
+# {
+#     "categories" :[
+#         {"name": "Back"},
+#         {"name": "Legs"},
+#         {"name": "Shoulders"},
+#         {"name": "Arms"},
+#         {"name": "Core"},
+#         {"name": "Cardio"},
+#         {"name": "Full Body"},
+#         {"name": "Abs"},
+#         {"name": "Glutes"}
+#     ]
+# }
+
+# GET http://localhost:9002/api/routines/ HTTP/1.1
+
+# GET http://localhost:9002/api/exercises HTTP/1.1
+
+# POST http://localhost:9002/api/exercises HTTP/1.1
+# content-type: application/json
+
+#   {
+#     "name": "Hip Thrust",
+#     "category_id": 11
+#   }
+
+POST http://localhost:9002/api/routines HTTP/1.1
+content-type: application/json
+
+  {
+    "name": "4X Full body - Entry level",
+    "user_id": 1
+  }
