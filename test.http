@@ -48,22 +48,38 @@
 #     ]
 # }
 
-# GET http://localhost:9002/api/routines/ HTTP/1.1
+GET http://localhost:9002/api/routines/ HTTP/1.1
 
-# GET http://localhost:9002/api/exercises HTTP/1.1
+# GET http://localhost:9002/api/categories HTTP/1.1
 
 # POST http://localhost:9002/api/exercises HTTP/1.1
 # content-type: application/json
 
 #   {
-#     "name": "Hip Thrust",
-#     "category_id": 11
+#     "name": "Bench press",
+#     "category_id": 1
 #   }
 
-POST http://localhost:9002/api/routines HTTP/1.1
-content-type: application/json
+# GET http://localhost:9002/api/exercises HTTP/1.1
 
-  {
-    "name": "4X Full body - Entry level",
-    "user_id": 1
-  }
+
+# POST http://localhost:9002/api/routines HTTP/1.1
+# content-type: application/json
+
+#   {
+#     "name": "4X Full body - Entry level",
+#     "user_id": 1
+#   }
+
+# b48f5e29-868e-4ab9-b4d7-b7c70243bcb3
+
+# POST http://localhost:9002/api/details HTTP/1.1
+# content-type: application/json
+
+#   {
+#     "sets": 4,
+#     "reps": 12,
+#     "weight" : 20,
+#     "routine_id" : "b48f5e29-868e-4ab9-b4d7-b7c70243bcb3",
+#     "exercise_id" : 10
+#   }
